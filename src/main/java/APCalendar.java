@@ -55,13 +55,6 @@ return count;
   public static int dayOfWeek(int month, int day, int year)
   {
     int d = firstDayOfYear(year);
-    int temp = 0;
-    while(d<dayOfYear(month, day, year){
-          foor(int j = 0; j<7; j++){
-            d++;
-            temp = j;
-  }
-}
-    return j;
+    return (d + dayOfYear(month, day, year) - 1)%7;
   }
 }
